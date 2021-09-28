@@ -78,8 +78,8 @@ function snippet() {
         .pipe(inject.replace('OPIX_FUNC', PIXEL_FUNC_NAME))
         // This will minify and rename to snippet.html
         .pipe(uglify())
-        .pipe(inject.prepend('<!-- Start Open Pixel Snippet -->\n<script>\n'))
-        .pipe(inject.append('\n</script>\n<!-- End Open Pixel Snippet -->'))
+        .pipe(inject.prepend('<!-- Start Omisocial Pixel Snippet -->\n<script>\n'))
+        .pipe(inject.append('\n</script>\n<!-- End Omisocial Pixel Snippet -->'))
         .pipe(rename({extname: '.html'}))
         .pipe(gulp.dest(DESTINATION_FOLDER));
 }
