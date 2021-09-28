@@ -14,7 +14,6 @@ let process = {
 // This is the header comment that will be included at the top of the "dist/openpixel.js" file
 let HEADER_COMMENT = process.env.OPIX_HEADER_COMMENT && process.env.OPIX_VERSION
     ? `${process.env.OPIX_HEADER_COMMENT} ver${process.env.OPIX_VERSION} \n` : '';
-console.log(HEADER_COMMENT);
 
 // This is where the compiled snippet and openpixel.js files will be dropped
 let DESTINATION_FOLDER = process.env.OPIX_DESTINATION_FOLDER || './dist';
