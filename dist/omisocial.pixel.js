@@ -458,4 +458,4 @@ window.onload = function () {
     }.bind(dataAttributes[i]));
   }
 };
-}(window, document, window["omc"], "omc", "http://t.omisocial.com/t", 1.0));
+}(window, document, window["omc"], "omc", "https://t.omisocial.com/t", 1.0));

@@ -5,7 +5,7 @@ let process = {
         OPIX_HEADER_COMMENT: '// Omisocial Tracking ',
         OPIX_DESTINATION_FOLDER: './dist',
         OPIX_PIXEL_FUNC_NAME: 'omc',
-        OPIX_PIXEL_ENDPOINT: 'http://t.omisocial.com/t',
+        OPIX_PIXEL_ENDPOINT: 'https://t.omisocial.com/t',
         OPIX_JS_ENDPOINT: '/omisocial.pixel.min.js',
         OPIX_VERSION: '1.0'
     }
