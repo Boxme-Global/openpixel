@@ -58,10 +58,13 @@ class Pixel {
   }
 
   sendBeacon() {
+    console.log('senbeacon');
     window.navigator.sendBeacon(this.getSourceUrl());
   }
 
   sendImage() {
+    console.log('senbe22acon');
+
     this.img = document.createElement('img');
     this.img.src = this.getSourceUrl();
     this.img.style.display = 'none';
