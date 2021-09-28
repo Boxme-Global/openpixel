@@ -1,4 +1,4 @@
-// Open Pixel v1.3.0 | Published By Dockwa | Created By Stuart Yamartino | MIT License
+// Omisocial Tracking  ver1.0 
 ;(function(window, document, pixelFunc, pixelFuncName, pixelEndpoint, versionNumber) {
 "use strict";
 
@@ -446,16 +446,16 @@ window.onload = function () {
     }.bind(aTags[i]));
   }
 
-  var dataAttributes = document.querySelectorAll('[data-opix-event]');
+  var dataAttributes = document.querySelectorAll('[data-omc-event]');
 
   for (var i = 0, l = dataAttributes.length; i < l; i++) {
     dataAttributes[i].addEventListener('click', function (_e) {
-      var event = this.getAttribute('data-opix-event');
+      var event = this.getAttribute('data-omc-event');
 
       if (event) {
-        new Pixel(event, Helper.now(), this.getAttribute('data-opix-data'));
+        new Pixel(event, Helper.now(), this.getAttribute('data-omc-data'));
       }
     }.bind(dataAttributes[i]));
   }
 };
-}(window, document, window["opix"], "opix", "/pixel.gif", 1));
+}(window, document, window["omc"], "omc", "http://t.omisocial.com/t", 1.0));
