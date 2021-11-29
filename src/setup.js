@@ -3,6 +3,9 @@ Cookie.exists('uid') ? Cookie.set('uid', Cookie.get('uid'), 2*365*24*60) : Cooki
 // save any utms through as session cookies
 Cookie.setUtms();
 
+// save any otms through as session cookies
+Cookie.setOtms();
+
 // process the queue and future incoming commands
 pixelFunc.process = function(method, value, optional) {
   if (method === 'init') {
